@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salesforce Bot Test</title>
+  <script>
+    window._einstein = window._einstein || [];
+    _einstein.push(['bot_id', 'Xx1E000000TN2wSAG']);
+    _einstein.push(['organization_id', '00DcX00000027wf']);
+    (function() {
+      var s = document.createElement('script');
+      s.src = 'https://officedepotmx--cambiobot2.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js';
+      s.onload = function() {
+        embedded_svc.init(
+          'https://officedepotmx--cambiobot2.sandbox.my.salesforce.com',
+          'https://officedepotmx--cambiobot2.sandbox.my.site.com/',
+          '00DcX00000027wf',
+          {
+            baseLiveAgentContentURL: 'https://c.la2s-core2.sfdc-lywfpd.salesforceliveagent.com/content',
+            deploymentId: '5721E000000KzHP',
+            buttonId: '5731E000000Kzc8',
+            baseLiveAgentURL: 'https://d.la2s-core2.sfdc-lywfpd.salesforceliveagent.com/chat',
+            eswConfig: {
+              enableLogging: true
+            }
+          }
+        );
+      };
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    })();
+  </script>
+</head>
+<body>
+  <h1>Salesforce Bot Test</h1>
+</body>
+</html>
