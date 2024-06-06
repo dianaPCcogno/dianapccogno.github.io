@@ -33,16 +33,16 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://officedepotmx--cambiobot2.sandbox.my.salesforce.com',
-			'https://officedepotmx--cambiobot2.sandbox.my.site.com/',
+			'https://officedepotmx.my.salesforce.com',
+			'https://officedepotmx.my.site.com/',
 			gslbBaseURL,
-			'00DcX00000027wf',
+			'00D300000007AEB',
 			'officedepot',
 			{
-				baseLiveAgentContentURL: 'https://c.la2s-core2.sfdc-lywfpd.salesforceliveagent.com/content',
+				baseLiveAgentContentURL: 'https://c.la1-core2.sfdc-lywfpd.salesforceliveagent.com/content',
 				deploymentId: '5721E000000KzHP',
 				buttonId: '5731E000000Kzc8',
-				baseLiveAgentURL: 'https://d.la2s-core2.sfdc-lywfpd.salesforceliveagent.com/chat',
+				baseLiveAgentURL: 'https://d.la1-core2.sfdc-lywfpd.salesforceliveagent.com/chat',
 				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I3J0000004CHMUA2_17a3ed5dec3',
 				isOfflineSupportEnabled: true
 			}
@@ -51,7 +51,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://officedepotmx--cambiobot2.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://officedepotmx.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
